@@ -63,6 +63,8 @@
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-suboption code="master.menu.administrator.listAnnouncement" action="/administrator/announcement/list"/>
 			<acme:menu-suboption code="master.menu.administrator.spam" action="/administrator/spam/list"/>
+			<acme:menu-suboption code="master.menu.administrator.listChallenge" action="/administrator/challenge/list"/>
+			<acme:menu-suboption code="master.menu.administrator.createChallenge" action="/administrator/challenge/create"/>
       <acme:menu-suboption code="master.menu.administrator.companyRecordsChart" action="/administrator/companies-investors-chart/chart"/>
       <acme:menu-suboption code="master.menu.administrator.listData" action="/administrator/list-data/list-mine"/>
 			<acme:menu-separator/>
