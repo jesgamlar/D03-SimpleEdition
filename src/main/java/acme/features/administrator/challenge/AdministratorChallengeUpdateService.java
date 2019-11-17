@@ -69,16 +69,22 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 		assert entity != null;
 		assert errors != null;
 
-		Date currentDate = new Date();
-		assert entity.getDeadline().after(currentDate);
+		if (!errors.hasErrors("deadline")) {
+			Date currentDate = new Date(System.currentTimeMillis());
+			errors.state(request, entity.getDeadline().after(currentDate), "deadline", "administrator.challenge.form.error.deadline");
+		}
 
-		assert entity.getRewardGold().getAmount() >= 0;
-		assert entity.getRewardSilver().getAmount() >= 0;
-		assert entity.getRewardBronze().getAmount() >= 0;
+		if (!errors.hasErrors("goldEUR")) {
+			errors.state(request, entity.getRewardGold().getCurrency().equals("EUR") || entity.getRewardGold().getCurrency().equals("€"), "goldEUR", "administrator.challenge.form.error.goldEUR");
+		}
 
-		assert entity.getRewardGold().getCurrency().equals("EUR") || entity.getRewardGold().getCurrency().equals("€");
-		assert entity.getRewardSilver().getCurrency().equals("EUR") || entity.getRewardSilver().getCurrency().equals("€");
-		assert entity.getRewardBronze().getCurrency().equals("EUR") || entity.getRewardBronze().getCurrency().equals("€");
+		if (!errors.hasErrors("silverEUR")) {
+			errors.state(request, entity.getRewardSilver().getCurrency().equals("EUR") || entity.getRewardSilver().getCurrency().equals("€"), "silverEUR", "administrator.challenge.form.error.silverEUR");
+		}
+
+		if (!errors.hasErrors("bronzeEUR")) {
+			errors.state(request, entity.getRewardBronze().getCurrency().equals("EUR") || entity.getRewardBronze().getCurrency().equals("€"), "bronzeEUR", "administrator.challenge.form.error.bronzeEUR");
+		}
 	}
 
 	@Override
