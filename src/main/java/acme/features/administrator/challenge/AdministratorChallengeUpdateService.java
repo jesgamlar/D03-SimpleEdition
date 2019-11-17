@@ -74,16 +74,16 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 			errors.state(request, entity.getDeadline().after(currentDate), "deadline", "administrator.challenge.form.error.deadline");
 		}
 
-		if (!errors.hasErrors("goldEUR")) {
-			errors.state(request, entity.getRewardGold().getCurrency().equals("EUR") || entity.getRewardGold().getCurrency().equals("€"), "goldEUR", "administrator.challenge.form.error.goldEUR");
+		if (!errors.hasErrors("rewardGold")) {
+			errors.state(request, entity.getRewardGold().getCurrency().equals("EUR") || entity.getRewardGold().getCurrency().equals("€"), "rewardGold", "administrator.challenge.form.error.goldEUR");
 		}
 
-		if (!errors.hasErrors("silverEUR")) {
-			errors.state(request, entity.getRewardSilver().getCurrency().equals("EUR") || entity.getRewardSilver().getCurrency().equals("€"), "silverEUR", "administrator.challenge.form.error.silverEUR");
+		if (!errors.hasErrors("rewardSilver")) {
+			errors.state(request, entity.getRewardSilver().getCurrency().equals("EUR") || entity.getRewardSilver().getCurrency().equals("€"), "rewardSilver", "administrator.challenge.form.error.silverEUR");
 		}
 
-		if (!errors.hasErrors("bronzeEUR")) {
-			errors.state(request, entity.getRewardBronze().getCurrency().equals("EUR") || entity.getRewardBronze().getCurrency().equals("€"), "bronzeEUR", "administrator.challenge.form.error.bronzeEUR");
+		if (!errors.hasErrors("rewardBronze")) {
+			errors.state(request, entity.getRewardBronze().getCurrency().equals("EUR") || entity.getRewardBronze().getCurrency().equals("€"), "rewardBronze", "administrator.challenge.form.error.bronzeEUR");
 		}
 	}
 
