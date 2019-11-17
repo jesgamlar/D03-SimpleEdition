@@ -17,13 +17,13 @@
 
 <acme:form readonly="true">
 	<acme:form-textbox code="authenticated.company-records.form.label.name" path="incorporated"/>
-	<acme:form-moment code="authenticated.company-records.form.label.sector" path="sector"/>
-	<acme:form-textarea code="authenticated.company-records.form.label.ceo" path="ceo"/>
+	<acme:form-textbox code="authenticated.company-records.form.label.sector" path="sector"/>
+	<acme:form-textbox code="authenticated.company-records.form.label.ceo" path="ceo"/>
 	<acme:form-textarea code="authenticated.company-records.form.label.activities" path="activities"/>
 	<acme:form-url code="authenticated.company-records.form.label.website" path="website"/>
 	<acme:form-textbox code="authenticated.company-records.form.label.phone" path="phone"/>
 	<acme:form-textbox code="authenticated.company-records.form.label.email" path="email"/>
-	<acme:form-textbox code="authenticated.company-records.form.label.stars" path="stars"/>
+	<acme:form-integer code="authenticated.company-records.form.label.stars" path="stars"/>
 	
 	<acme:form-return code="authenticated.company-records.form.button.return"/>
 </acme:form>
