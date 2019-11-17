@@ -16,10 +16,17 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
-<acme:list readonly="true">
-	<acme:list-column code="administrator.spams.form.label.threshold" path="threshold" width="10%"/>
-	<acme:list-column code="administrator.spams.form.label.englishWords" path="englishWords" width="45%"/>
-	<acme:list-column code="administrator.spams.form.label.spanishWords" path="spanishWords" width="45%"/>
-</acme:list>
+<acme:form>
+	<acme:form-textbox code="administrator.spams.form.label.threshold" path="threshold"/>
+	<acme:form-textarea code="administrator.spams.form.label.englishWords" path="englishWords"/>
+	<acme:form-textarea code="administrator.spams.form.label.spanishWords" path="spanishWords"/>
+	
+	<acme:form-submit test="${command == 'show'}"
+	code="administrator.spams.form.button.update"
+	action="administrator/spam/update"/>
+	<acme:form-submit test="${command == 'update'}"
+	code="administrator.spams.form.button.update"
+	action="administrator/spam/update"/>
+</acme:form>
 
 

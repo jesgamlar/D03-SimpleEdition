@@ -7,6 +7,9 @@
 # this software. It has been tested carefully, but it is not guaranteed for any particular
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
-administrator.spams.list.label.englishWords = English spam words
-administrator.spams.list.label.spanishWords = Spanish spam words
-administrator.spams.list.label.threshold = Threshold
+
+administrator.spams.form.label.englishWords = English spam words
+administrator.spams.form.label.spanishWords = Spanish spam words
+administrator.spams.form.label.threshold = Threshold
+
+administrator.spams.form.button.update = Update
