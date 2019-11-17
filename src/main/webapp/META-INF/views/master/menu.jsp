@@ -62,10 +62,14 @@
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-suboption code="master.menu.administrator.listAnnouncement" action="/administrator/announcement/list"/>
+			<acme:menu-suboption code="master.menu.administrator.investorRecord" action="/administrator/investor-record/list"/>
 			<acme:menu-suboption code="master.menu.administrator.spam" action="/administrator/spam/list"/>
 			<acme:menu-suboption code="master.menu.administrator.companyRecords" action="/administrator/company-records/list"/>
-      		<acme:menu-suboption code="master.menu.administrator.companyRecordsChart" action="/administrator/companies-investors-chart/chart"/>
-      		<acme:menu-suboption code="master.menu.administrator.listData" action="/administrator/list-data/list-mine"/>
+			<acme:menu-suboption code="master.menu.administrator.listChallenge" action="/administrator/challenge/list"/>
+			<acme:menu-suboption code="master.menu.administrator.createChallenge" action="/administrator/challenge/create"/>
+      <acme:menu-suboption code="master.menu.administrator.companyRecordsChart" action="/administrator/companies-investors-chart/chart"/>
+      <acme:menu-suboption code="master.menu.administrator.listData" action="/administrator/list-data/list-mine"/>
+      
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>

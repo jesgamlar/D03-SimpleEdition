@@ -428,7 +428,7 @@ GamezBulletin
       <w>252</w>
       <h>133</h>
     </coordinates>
-    <panel_attributes>Challenge
+    <panel_attributes>CompanyRecords
 --
 + name: String(NotBlank)
 + sector: String (NotBlank)

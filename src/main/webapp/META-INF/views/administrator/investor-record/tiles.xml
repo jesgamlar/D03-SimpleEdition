@@ -17,9 +17,13 @@
 	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
-	
-	<definition name="administrator/investors-chart/form" extends="master">
-		<put-attribute name="body" type="template" value="../administrator/investors-chart/form.jsp" />
-	</definition>
 
+	<definition name="administrator/investor-record/list" extends="master">
+		<put-attribute name="body" type="template" value="../administrator/investor-record/list.jsp" />
+	</definition>
+	
+	<definition name="administrator/investor-record/form" extends="master">
+		<put-attribute name="body" type="template" value="../administrator/investor-record/form.jsp"/>
+	</definition>
+	
 </tiles-definitions>
