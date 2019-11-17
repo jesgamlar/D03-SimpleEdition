@@ -66,6 +66,7 @@ master.menu.administrator.companyRecordsChart = Company and Investor Records Cha
 master.menu.administrator.listData = List Data
 master.menu.administrator.listChallenge = Challenge
 master.menu.administrator.createChallenge = Create Challenge
+master.menu.administrator.investorRecord = Investor Record
 
 # master.menu.provider ########################################################
 
