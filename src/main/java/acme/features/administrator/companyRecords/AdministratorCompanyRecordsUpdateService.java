@@ -31,7 +31,7 @@ public class AdministratorCompanyRecordsUpdateService implements AbstractUpdateS
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(request, errors, "incorporated");
+		request.bind(entity, errors, "incorporated");
 
 	}
 

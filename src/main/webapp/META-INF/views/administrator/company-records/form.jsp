@@ -29,19 +29,19 @@
 	<acme:form-textbox code="administrator.company-records.form.label.email" path="email"/>
 	<acme:form-integer code="administrator.company-records.form.label.stars" path="stars"/>
 	
-	<acme:form-submit test="${command == 'show' }"
+	<acme:form-submit test="${command == 'show'}"
 		code="administrator.company-records.form.button.update"
 		action="/administrator/company-records/update"/>
-	<acme:form-submit test="${command == 'show' }"
+	<acme:form-submit test="${command == 'show'}"
 		code="administrator.company-records.form.button.delete"
 		action="/administrator/company-records/delete"/>
-	<acme:form-submit test="${command == 'create' }"
+	<acme:form-submit test="${command == 'create'}"
 		code="administrator.company-records.form.button.create"
 		action="/administrator/company-records/create"/>
-	<acme:form-submit test="${command == 'update' }"
+	<acme:form-submit test="${command == 'update'}"
 		code="administrator.company-records.form.button.update"
 		action="/administrator/company-records/update"/>
-	<acme:form-submit test="${command == 'delete' }"
+	<acme:form-submit test="${command == 'delete'}"
 		code="administrator.company-records.form.button.delete"
 		action="/administrator/company-records/delete"/>
 	
