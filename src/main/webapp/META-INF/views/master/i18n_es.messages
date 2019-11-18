@@ -63,6 +63,8 @@ master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.spam = Configuracion de Spam
 master.menu.administrator.companyRecordsChart = Grafico de Registro de Compania y Inversores
 master.menu.administrator.listData = Listar Datos
+master.menu.administrator.commercial-banner = Banners Comerciales
+master.menu.administrator.non-commercial-banner = Banners No Comerciales
 
 # master.menu.provider ########################################################
 
