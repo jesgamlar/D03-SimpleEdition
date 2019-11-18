@@ -27,6 +27,7 @@
 	<acme:form-submit test="${command == 'update'}"
 	code="administrator.spams.form.button.update"
 	action="administrator/spam/update"/>
+	<acme:form-return code="administrator.spam.form.button.return"/>
 </acme:form>
 
 

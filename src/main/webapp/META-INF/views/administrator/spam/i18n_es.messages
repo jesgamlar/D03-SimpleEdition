@@ -8,8 +8,10 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-administrator.spams.form.label.englishWords = Palabras spam en inglés
-administrator.spams.form.label.spanishWords = Palabras spam en español
-administrator.spams.form.label.threshold = Límite
-
+administrator.spams.list.label.englishWords = Palabras spam en inglés
+administrator.spams.list.label.spanishWords = Palabras spam en español
+administrator.spams.list.label.threshold = Límite
+administrator.spam.form.button.return = Volver
 administrator.spams.form.button.update = Actualizar
+
+administrator.spams.form.label.threshold = Límite

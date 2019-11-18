@@ -8,8 +8,12 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+
 administrator.spams.form.label.englishWords = English spam words
 administrator.spams.form.label.spanishWords = Spanish spam words
 administrator.spams.form.label.threshold = Threshold
+administrator.spam.form.button.return = Return
+
+administrator.spams.list.label.threshold = Threshold
 
 administrator.spams.form.button.update = Update
