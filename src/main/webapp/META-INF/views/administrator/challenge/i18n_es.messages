@@ -34,3 +34,6 @@ administrator.challenge.form.error.deadlineIncorrect = Esto debe ser una fecha n
 administrator.challenge.form.error.goldIncorrect = Esto debe ser una recompensa no vacía
 administrator.challenge.form.error.silverIncorrect = Esto debe ser una recompensa no vacía
 administrator.challenge.form.error.bronzeIncorrect = Esto debe ser una recompensa no vacía
+
+administrator.challenge.form.error.goldAmount = La recompensa de oro debe ser mayor o igual que la recompensa de pata y la de bronce
+administrator.challenge.form.error.silverAmount = La recompensa de plata debe ser mayor o igual que la recompensa de bronce

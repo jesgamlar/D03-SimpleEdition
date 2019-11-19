@@ -101,6 +101,15 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 		if (!errors.hasErrors("rewardBronze")) {
 			errors.state(request, entity.getRewardBronze().getCurrency().equals("EUR") || entity.getRewardBronze().getCurrency().equals("€"), "rewardBronze", "administrator.challenge.form.error.bronzeEUR");
 		}
+
+		if (!errors.hasErrors("rewardGold")) {
+			errors.state(request, entity.getRewardGold().getAmount() >= entity.getRewardSilver().getAmount() && entity.getRewardGold().getAmount() >= entity.getRewardBronze().getAmount(), "rewardGold", "administrator.challenge.form.error.goldAmount");
+		}
+
+		if (!errors.hasErrors("rewardSilver")) {
+			errors.state(request, entity.getRewardSilver().getAmount() >= entity.getRewardBronze().getAmount(), "rewardSilver", "administrator.challenge.form.error.silverAmount");
+		}
+
 	}
 
 	@Override
