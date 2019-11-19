@@ -23,9 +23,11 @@ public class CommercialBanner extends DomainEntity {
 	//Attributes ------------------------------------------
 
 	@URL
+	@NotBlank
 	private String				picture;
 
 	@URL
+	@NotBlank
 	private String				url;
 
 	@NotBlank

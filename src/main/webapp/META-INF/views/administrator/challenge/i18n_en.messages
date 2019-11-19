@@ -29,3 +29,8 @@ administrator.challenge.form.error.deadline = The deadline must be a future date
 administrator.challenge.form.error.goldEUR = The currency must be euros (EUR or €)
 administrator.challenge.form.error.silverEUR = The currency must be euros (EUR or €)
 administrator.challenge.form.error.bronzeEUR = The currency must be euros (EUR or €)
+
+administrator.challenge.form.error.deadlineIncorrect = This must be a non-blank date
+administrator.challenge.form.error.goldIncorrect = This must be a non-blank reward
+administrator.challenge.form.error.silverIncorrect = This must be a non-blank reward
+administrator.challenge.form.error.bronzeIncorrect = This must be a non-blank reward

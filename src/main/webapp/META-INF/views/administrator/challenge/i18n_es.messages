@@ -29,3 +29,8 @@ administrator.challenge.form.error.deadline = La fecha límite debe estar en el 
 administrator.challenge.form.error.goldEUR = La cantidad deben ser euros (EUR o €)
 administrator.challenge.form.error.silverEUR = La cantidad deben ser euros (EUR o €)
 administrator.challenge.form.error.bronzeEUR = La cantidad deben ser euros (EUR o €)
+
+administrator.challenge.form.error.deadlineIncorrect = Esto debe ser una fecha no vacía
+administrator.challenge.form.error.goldIncorrect = Esto debe ser una recompensa no vacía
+administrator.challenge.form.error.silverIncorrect = Esto debe ser una recompensa no vacía
+administrator.challenge.form.error.bronzeIncorrect = Esto debe ser una recompensa no vacía
