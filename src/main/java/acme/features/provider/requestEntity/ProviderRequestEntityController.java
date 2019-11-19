@@ -1,5 +1,5 @@
 
-package acme.features.administrator.requestEntity;
+package acme.features.provider.requestEntity;
 
 import javax.annotation.PostConstruct;
 
@@ -8,21 +8,24 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import acme.entities.requestEntity.RequestEntity;
+import acme.entities.roles.Provider;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
-import acme.framework.entities.Administrator;
 
 @Controller
-@RequestMapping("/administrator/request-entity")
-public class AuthenticatedRequestEntityController extends AbstractController<Administrator, RequestEntity> {
+@RequestMapping("/provider/request-entity")
+public class ProviderRequestEntityController extends AbstractController<Provider, RequestEntity> {
 
 	//Internal state -------------------------------------------
 
 	@Autowired
-	private AdministratorRequestEntityListService	listService;
+	private ProviderRequestEntityListService	listService;
 
 	@Autowired
-	private AdministratorRequestEntityShowService	showService;
+	private ProviderRequestEntityShowService	showService;
+
+	@Autowired
+	private ProviderRequestEntityCreateService	createService;
 
 
 	//Constructors ---------------------------------------------
@@ -31,6 +34,7 @@ public class AuthenticatedRequestEntityController extends AbstractController<Adm
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 	}
 
 }

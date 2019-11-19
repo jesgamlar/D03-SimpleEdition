@@ -1,27 +1,25 @@
 
-package acme.features.administrator.requestEntity;
-
-import java.util.Collection;
+package acme.features.provider.requestEntity;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.requestEntity.RequestEntity;
+import acme.entities.roles.Provider;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
-import acme.framework.services.AbstractListService;
+import acme.framework.services.AbstractShowService;
 
 @Service
-public class AdministratorRequestEntityListService implements AbstractListService<Administrator, RequestEntity> {
+public class ProviderRequestEntityShowService implements AbstractShowService<Provider, RequestEntity> {
 
 	//Internal state --------------------------------------------------
 
 	@Autowired
-	AdministratorRequestEntityRepository repository;
+	private ProviderRequestEntityRepository repository;
 
 
-	//AbstractListService<Authenticated, Request> interface ------
+	//AbstractShowService<Administrator, RequestEntity> interface ------
 
 	@Override
 	public boolean authorise(final Request<RequestEntity> request) {
@@ -32,24 +30,25 @@ public class AdministratorRequestEntityListService implements AbstractListServic
 
 	@Override
 	public void unbind(final Request<RequestEntity> request, final RequestEntity entity, final Model model) {
-		// TODO Auto-generated method stub
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "moment", "title");
-
+		request.unbind(entity, model, "title", "moment", "deadline", "text", "rewardMin", "rewardMax", "ticker");
 	}
 
 	@Override
-	public Collection<RequestEntity> findMany(final Request<RequestEntity> request) {
+	public RequestEntity findOne(final Request<RequestEntity> request) {
 		assert request != null;
 
-		Collection<RequestEntity> result;
+		RequestEntity result;
+		int id;
 
-		result = this.repository.findManyAll();
+		id = request.getModel().getInteger("id");
+		result = this.repository.findOneById(id);
 
 		return result;
+
 	}
 
 }

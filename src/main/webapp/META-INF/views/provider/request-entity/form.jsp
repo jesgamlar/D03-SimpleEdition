@@ -15,20 +15,21 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
-<acme:form readonly="true">
-	<acme:form-textbox code="authenticated.requestEntity.form.label.title" path="title"/>
-	<acme:form-moment code="authenticated.requestEntity.form.label.moment" path="moment"/>
-	<acme:form-textbox code="authenticated.requestEntity.form.label.deadline" path="deadline"/>
-	<acme:form-textarea code="authenticated.requestEntity.form.label.text" path="text"/>
-	<acme:form-textbox code="authenticated.requestEntity.form.label.rewardMin" path="rewardMin"/>
-	<acme:form-textbox code="authenticated.requestEntity.form.label.rewardMax" path="rewardMax"/>
-	<acme:form-textbox code="authenticated.requestEntity.form.label.ticker" path="ticker"/>
+<acme:form>
+	<acme:form-textbox code="provider.requestEntity.form.label.title" path="title"/>
+	<acme:form-moment code="provider.requestEntity.form.label.deadline" path="deadline"/>
+	<acme:form-textarea code="provider.requestEntity.form.label.text" path="text"/>
+	<acme:form-money code="provider.requestEntity.form.label.rewardMin" path="rewardMin"/>
+	<acme:form-money code="provider.requestEntity.form.label.rewardMax" path="rewardMax"/>
+	<acme:form-textbox code="provider.requestEntity.form.label.ticker" path="ticker"/>
+	
+	<acme:form-checkbox code="provider.requestEntity.form.label.checkbox"  path="accept"/>
 	
 	<acme:form-submit test="${command == 'create'}"
 
 		code="provider.requestEntity.form.button.create"
 
-		action="/provider/requestEntity/create"/>
+		action="/provider/request-entity/create"/>
 	
 	
 	<acme:form-return code="provider.requestEntity.form.button.return"/>

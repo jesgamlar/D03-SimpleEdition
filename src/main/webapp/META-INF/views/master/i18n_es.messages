@@ -58,7 +58,7 @@ master.menu.anonymous.listTopInvestors = Mejores Inversores
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
-master.menu.administrator.listAnnouncements = Anuncios
+master.menu.administrator.listAnnouncement = Anuncios
 master.menu.administrator.companyRecords = Registro de compañias
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.spam = Configuracion de Spam
@@ -69,15 +69,23 @@ master.menu.administrator.non-commercial-banner = Banners No Comerciales
 master.menu.administrator.listChallenge = Retos
 master.menu.administrator.investorRecord = Registro de Inversores
 
+master.menu.administrator.commercial-banner.create = Crear Banner Comercial
+master.menu.administrator.non-commercial-banner.create = Crear Banner No Comercial
+master.menu.administrator.listAnnouncement.create = Crear Anuncio
+master.menu.administrator.investorRecord.create = Crear Registro de Inversor
+master.menu.administrator.companyRecords.create = Crear Registro de Compañia
+master.menu.administrator.listChallenge.create = Crear Reto
+
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
-master.menu.provider.favourite-link = Enlace favorito
+master.menu.provider.request.create = Crear Petición
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumidor
-master.menu.consumer.favourite-link = Enlace favorito
+master.menu.consumer.offer.create = Crear Oferta
 
 # master.menu.user-account ####################################################
 

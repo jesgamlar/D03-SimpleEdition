@@ -8,14 +8,27 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.offer.form.label.title = Title:
-authenticated.offer.form.label.moment = Moment:
-authenticated.offer.form.label.info = Info:
-authenticated.offer.form.label.maxMoney = maximun Money:
-authenticated.offer.form.label.minMoney = minimun Money:
-authenticated.offer.form.label.deadline = Deadline:
-authenticated.offer.form.button.return = Return
+consumer.offer.form.label.title = Title:
+consumer.offer.form.label.moment = Moment:
+consumer.offer.form.label.info = Info:
+consumer.offer.form.label.maxMoney = maximun Money:
+consumer.offer.form.label.minMoney = minimun Money:
+consumer.offer.form.label.deadline = Deadline:
+consumer.offer.form.button.return = Return
 
-authenticated.offer.list.label.moment = Moment
-authenticated.offer.list.label.title = Title
-authenticated.offer.list.label.deadline = Deadline
+consumer.offer.list.label.moment = Moment
+consumer.offer.list.label.title = Title
+consumer.offer.list.label.deadline = Deadline
+
+consumer.offer.form.button.create = Create
+consumer.offer.form.label.checkbox = Confirm
+
+consumer.offer.form.error.maxMoneyIncorrect = This must be non-blank
+consumer.offer.form.error.minMoneyIncorrect = This must be non-blank
+consumer.offer.form.error.maxMoneyEUR = The currency must be euros (EUR or €)
+consumer.offer.form.error.minMoneyEUR = The currency must be euros (EUR or €)
+consumer.offer.form.error.maxMoneyAmount = The max money offered must be equal or greater than the min money offered
+consumer.offer.form.error.deadlineIncorrect = This must be a non-blank date 
+consumer.offer.form.error.deadline = The deadline must be a future date
+
+consumer.offer.form.error.accept = Please, confirm the changes

@@ -36,7 +36,7 @@ master.menu.authenticated.listChallenge = Challenges
 master.menu.authenticated.listCompaniesRecord = Company Records
 master.menu.authenticated.listInvestorRecord = Investor Records
 master.menu.authenticated.listOffers = Offers
-master.menu.authenticated.listRequest = Requests
+master.menu.authenticated.listRequests = Requests
 
 
 
@@ -69,16 +69,23 @@ master.menu.administrator.commercial-banner = Commecial Banners
 master.menu.administrator.non-commercial-banner = Non-commercial Banners
 master.menu.administrator.listChallenge = Challenge
 master.menu.administrator.investorRecord = Investor Record
+master.menu.administrator.commercial-banner.create = Create Commercial Banner
+master.menu.administrator.non-commercial-banner.create = Create Non-Commercial Banner
+master.menu.administrator.listAnnouncement.create = Create Announcement
+master.menu.administrator.investorRecord.create = Create Investor Record
+master.menu.administrator.companyRecords.create = Create Company Record
+master.menu.administrator.listChallenge.create = Create Challenge
+
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider
-master.menu.provider.favourite-link = Favourite link
+master.menu.provider.request.create = Create Request
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
-master.menu.consumer.favourite-link = Favourite link
+master.menu.consumer.offer.create = Create Offer
 
 # master.menu.user-account ####################################################
 

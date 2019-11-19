@@ -19,11 +19,11 @@
 <tiles-definitions>
 
 	<definition name="provider/request-entity/list" extends="master">
-		<put-attribute name="body" type="template" value="../provider/requestEntity/list.jsp" />
+		<put-attribute name="body" type="template" value="../provider/request-entity/list.jsp" />
 	</definition>
 	
-	<definition name="providerr/request-entity/form" extends="master">
-		<put-attribute name="body" type="template" value="../provider/requestEntity/form.jsp"/>
+	<definition name="provider/request-entity/form" extends="master">
+		<put-attribute name="body" type="template" value="../provider/request-entity/form.jsp"/>
 	</definition>
 	
 </tiles-definitions>
