@@ -17,9 +17,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list readonly="true">
-	<acme:list-column code="administrator.spams.list.label.threshold" path="threshold" width="20%"/>
-	<acme:list-column code="administrator.spams.list.label.englishWords" path="englishWords" width="40%"/>
-	<acme:list-column code="administrator.spams.list.label.spanishWords" path="spanishWords" width="40%"/>
+	<acme:list-column code="administrator.spams.list.label.threshold" path="threshold" width="25%"/>
 </acme:list>
 
 

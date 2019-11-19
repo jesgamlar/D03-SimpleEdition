@@ -76,8 +76,10 @@
   <!-- Spam -->
 	
 	<bean name="spam" class="acme.entities.spams.Spam">
-		<property name="englishWords" value="sex,hard core,viagra,cialis,nigeria,you’ve won,million dollar"/>
-		<property name="spanishWords" value="sexo,extremo,viagra,cialis,nigeria,has ganado,millón de dolares"/>
+		<property name="englishWords" value="sex,hard core,viagra,cialis,
+		nigeria,you’ve won,million dollar"/>
+		<property name="spanishWords" value="sexo,extremo,viagra,cialis,
+		nigeria,has ganado,millón de dolares"/>
 		<property name="threshold" value="1.00" />
 	</bean>
 	
