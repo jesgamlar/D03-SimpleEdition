@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.administrator.spams;
+package acme.features.administrator.spam;
 
 import javax.annotation.PostConstruct;
 
@@ -30,9 +30,6 @@ public class AdministratorSpamController extends AbstractController<Administrato
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AdministratorSpamListService	listService;
-
-	@Autowired
 	private AdministratorSpamShowService	showService;
 
 	@Autowired
@@ -43,7 +40,6 @@ public class AdministratorSpamController extends AbstractController<Administrato
 
 	@PostConstruct
 	private void initialise() {
-		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
 	}
