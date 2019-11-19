@@ -39,10 +39,7 @@ public class AdministratorSpamShowService implements AbstractShowService<Adminis
 		assert request != null;
 
 		Spam result;
-		int id;
-
-		id = request.getModel().getInteger("id");
-		result = this.repository.findOneById(id);
+		result = this.repository.findSpam();
 
 		return result;
 	}

@@ -1,4 +1,3 @@
-
 <%--
 - list.jsp
 -
@@ -18,6 +17,7 @@
 
 <acme:list readonly="true">
 	<acme:list-column code="administrator.spams.list.label.threshold" path="threshold" width="25%"/>
+	<acme:list-column code="administrator.spams.list.label.englishSpamWords" path="englishWords" width="40%"/>
 </acme:list>
 
 

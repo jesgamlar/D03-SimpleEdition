@@ -32,7 +32,7 @@ public class AdministratorSpamListService implements AbstractListService<Adminis
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "threshold");
+		request.unbind(entity, model, "threshold", "englishWords");
 	}
 
 	@Override
@@ -41,7 +41,7 @@ public class AdministratorSpamListService implements AbstractListService<Adminis
 
 		Collection<Spam> result;
 
-		result = this.repository.findManyAll();
+		result = this.repository.findSpamList();
 
 		return result;
 	}
