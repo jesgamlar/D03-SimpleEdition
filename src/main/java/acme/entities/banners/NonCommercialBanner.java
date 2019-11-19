@@ -22,15 +22,16 @@ public class NonCommercialBanner extends DomainEntity {
 	//Attributes ------------------------------------------
 
 	@URL
+	@NotBlank
 	private String				picture;
 
 	@URL
+	@NotBlank
 	private String				url;
 
 	@NotBlank
 	private String				slogan;
 
-	@NotBlank
 	private String				jingle;
 
 }
