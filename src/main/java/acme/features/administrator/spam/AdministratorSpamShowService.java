@@ -1,7 +1,5 @@
 
-package acme.features.administrator.spams;
-
-import java.util.Collection;
+package acme.features.administrator.spam;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,10 +8,10 @@ import acme.entities.spams.Spam;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Administrator;
-import acme.framework.services.AbstractListService;
+import acme.framework.services.AbstractShowService;
 
 @Service
-public class AdministratorSpamListService implements AbstractListService<Administrator, Spam> {
+public class AdministratorSpamShowService implements AbstractShowService<Administrator, Spam> {
 
 	@Autowired
 	private AdministratorSpamRepository repository;
@@ -32,16 +30,17 @@ public class AdministratorSpamListService implements AbstractListService<Adminis
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "threshold", "englishWords");
+		request.unbind(entity, model, "englishWords", "spanishWords", "threshold");
+
 	}
 
 	@Override
-	public Collection<Spam> findMany(final Request<Spam> request) {
+	public Spam findOne(final Request<Spam> request) {
 		assert request != null;
 
-		Collection<Spam> result;
+		Spam result;
 
-		result = this.repository.findSpamList();
+		result = this.repository.findSpam();
 
 		return result;
 	}

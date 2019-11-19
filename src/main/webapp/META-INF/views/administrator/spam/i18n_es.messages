@@ -13,6 +13,3 @@ administrator.spams.form.label.spanishWords = Palabras spam en español
 administrator.spams.form.label.threshold = Límite
 administrator.spams.form.button.return = Volver
 administrator.spams.form.button.update = Actualizar
-
-administrator.spams.list.label.threshold = Límite
-administrator.spams.list.label.englishSpamWords = Palabras spam en ingles

@@ -20,12 +20,11 @@
 	<acme:form-textarea code="administrator.spams.form.label.englishWords" path="englishWords"/>
 	<acme:form-textarea code="administrator.spams.form.label.spanishWords" path="spanishWords"/>
 	
-	<acme:form-submit test="${command == 'show'}"
-	code="administrator.spams.form.button.update"
-	action="administrator/spam/update"/>
+	<acme:form-submit test="${command == 'show'}" code="administrator.spams.form.button.update" action="/administrator/spam/update"/>
+	
 	<acme:form-submit test="${command == 'update'}"
 	code="administrator.spams.form.button.update"
-	action="administrator/spam/update"/>
+	action="/administrator/spam/update"/>
 	<acme:form-return code="administrator.spams.form.button.return"/>
 </acme:form>
 
