@@ -45,7 +45,7 @@ public class AdministratorAnnouncementShowService implements AbstractShowService
 		int id;
 
 		id = request.getModel().getInteger("id");
-		result = this.repository.findOneById(id);
+		result = this.repository.findOneAnnouncementById(id);
 
 		return result;
 
