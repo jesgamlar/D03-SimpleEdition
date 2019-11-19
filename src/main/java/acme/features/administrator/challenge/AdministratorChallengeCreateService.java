@@ -65,6 +65,22 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		assert errors != null;
 
 		if (!errors.hasErrors("deadline")) {
+			errors.state(request, entity.getDeadline() != null, "deadline", "administrator.challenge.form.error.deadlineIncorrect");
+		}
+
+		if (!errors.hasErrors("rewardGold")) {
+			errors.state(request, entity.getRewardGold() != null, "rewardGold", "administrator.challenge.form.error.goldIncorrect");
+		}
+
+		if (!errors.hasErrors("rewardSilver")) {
+			errors.state(request, entity.getRewardSilver() != null, "rewardSilver", "administrator.challenge.form.error.silverIncorrect");
+		}
+
+		if (!errors.hasErrors("rewardBronze")) {
+			errors.state(request, entity.getRewardBronze() != null, "rewardBronze", "administrator.challenge.form.error.bronzeIncorrect");
+		}
+
+		if (!errors.hasErrors("deadline")) {
 			Date currentDate = new Date(System.currentTimeMillis());
 			errors.state(request, entity.getDeadline().after(currentDate), "deadline", "administrator.challenge.form.error.deadline");
 		}
@@ -79,6 +95,14 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 
 		if (!errors.hasErrors("rewardBronze")) {
 			errors.state(request, entity.getRewardBronze().getCurrency().equals("EUR") || entity.getRewardBronze().getCurrency().equals("€"), "rewardBronze", "administrator.challenge.form.error.bronzeEUR");
+		}
+
+		if (!errors.hasErrors("rewardGold")) {
+			errors.state(request, entity.getRewardGold().getAmount() >= entity.getRewardSilver().getAmount() && entity.getRewardGold().getAmount() >= entity.getRewardBronze().getAmount(), "rewardGold", "administrator.challenge.form.error.goldAmount");
+		}
+
+		if (!errors.hasErrors("rewardSilver")) {
+			errors.state(request, entity.getRewardSilver().getAmount() >= entity.getRewardBronze().getAmount(), "rewardSilver", "administrator.challenge.form.error.silverAmount");
 		}
 
 	}
