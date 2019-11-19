@@ -42,5 +42,5 @@
 	<acme:form-submit test="${command == 'delete'}"
 		code="administrator.challenge.form.button.delete"
 		action="/administrator/challenge/delete"/>
-	<acme:form-return code="authenticated.challenge.form.button.return"/>
+	<acme:form-return code="administrator.challenge.form.button.return"/>
 </acme:form>

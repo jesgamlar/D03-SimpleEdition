@@ -65,7 +65,6 @@ master.menu.administrator.spam = Configuracion de Spam
 master.menu.administrator.companyRecordsChart = Grafico de Registro de Compania y Inversores
 master.menu.administrator.listData = Listar Datos
 master.menu.administrator.listChallenge = Retos
-master.menu.administrator.createChallenge = Crear Retos
 master.menu.administrator.investorRecord = Registro de Inversores
 
 # master.menu.provider ########################################################
