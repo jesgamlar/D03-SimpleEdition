@@ -16,8 +16,8 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="administrator.commercial-banner.form.label.picture" path="picture"/>
-	<acme:form-textarea code="administrator.commercial-banner.form.label.url" path="url"/>
+	<acme:form-url code="administrator.commercial-banner.form.label.picture" path="picture"/>
+	<acme:form-url code="administrator.commercial-banner.form.label.url" path="url"/>
 	<acme:form-textarea code="administrator.commercial-banner.form.label.slogan" path="slogan"/>
 	<acme:form-textarea code="administrator.commercial-banner.form.label.creditCard" path="creditCard"/>
 	
