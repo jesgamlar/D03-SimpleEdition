@@ -30,7 +30,6 @@ public class NonCommercialBanner extends DomainEntity {
 	@NotBlank
 	private String				slogan;
 
-	@NotBlank
 	private String				jingle;
 
 }
