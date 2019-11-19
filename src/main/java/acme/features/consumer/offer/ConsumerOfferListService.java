@@ -1,5 +1,5 @@
 
-package acme.features.consumerr.offer;
+package acme.features.consumer.offer;
 
 import java.util.Collection;
 
@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.offers.Offer;
+import acme.entities.roles.Consumer;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Administrator;
 import acme.framework.services.AbstractListService;
 
 @Service

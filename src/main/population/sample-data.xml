@@ -9,8 +9,79 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="conversion-service.xml" />
+	
+	<!-- Some Users -->
+	
+	<bean name="consumerUserAccount" class="acme.framework.entities.UserAccount">
+        <property name="username" value="consumer" />
+        <property name="password" value="consumer" />
+        <property name="enabled" value="true" />
+        <property name="identity">
+            <bean class="acme.datatypes.UserIdentity">
+                <property name="name" value="Jose" />
+                <property name="surname" value="Camacho" />
+                <property name="email" value="jose.camacho@acme.com" />
+            </bean>
+        </property>
+        <property name="roles">
+            <list>
+                <ref bean="consumerConsumer" />
+            </list>
+        </property>
+    </bean>
 
+    <bean name="consumerConsumer" class="acme.framework.entities.Authenticated">
+        <property name="userAccount" ref="consumerUserAccount" />
+    </bean>
+    
+    
+    
+    <bean name="providerUserAccount" class="acme.framework.entities.UserAccount">
+        <property name="username" value="provider" />
+        <property name="password" value="provider" />
+        <property name="enabled" value="true" />
+        <property name="identity">
+            <bean class="acme.datatypes.UserIdentity">
+                <property name="name" value="Luisa" />
+                <property name="surname" value="Camacho" />
+                <property name="email" value="luisa.camacho@acme.com" />
+            </bean>
+        </property>
+        <property name="roles">
+            <list>
+                <ref bean="providerProvider" />
+            </list>
+        </property>
+    </bean>
 
+    <bean name="providerProvider" class="acme.framework.entities.Authenticated">
+        <property name="userAccount" ref="providerUserAccount" />
+    </bean>
+    
+
+	<!-- Consumers -->
+	
+	<bean id="consumer01" class="acme.entities.roles.Consumer">
+		<property name="company" value="Company One" />
+		<property name="sector" value="Alimentacion" />
+		<property name="userAccount">
+			<ref bean="consumerUserAccount" />
+		</property>
+	</bean>
+	
+	<!-- Providers -->
+	
+	<bean id="provider01" class="acme.entities.roles.Provider">
+		<property name="company" value="Company Two" />
+		<property name="sector" value="Alimentacion" />
+		<property name="userAccount">
+			<ref bean="providerUserAccount" />
+		</property>
+	</bean>
+	
+	
+	
+	
 
 	<bean id="reward01" class="acme.framework.datatypes.Money">
 		<property name="amount" value="1000" />

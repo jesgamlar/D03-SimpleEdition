@@ -217,6 +217,8 @@
 
     insert into `hibernate_sequence` values ( 1 );
 create index IDXnr284tes3x8hnd3h716tmb3fr on `challenge` (`deadline`);
+create index IDXq2o9psuqfuqmq59f0sq57x9uf on `offer` (`deadline`);
+create index IDX6075l7l7ajup0b22keibg4bil on `request_entity` (`deadline`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);

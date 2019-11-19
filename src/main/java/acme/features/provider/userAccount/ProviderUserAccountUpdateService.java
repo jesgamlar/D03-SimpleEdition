@@ -15,12 +15,12 @@ package acme.features.provider.userAccount;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.roles.Provider;
 import acme.framework.components.Errors;
 import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.components.Response;
-import acme.framework.entities.Authenticated;
 import acme.framework.entities.Principal;
 import acme.framework.entities.UserAccount;
 import acme.framework.entities.UserRole;
@@ -33,7 +33,7 @@ public class ProviderUserAccountUpdateService implements AbstractUpdateService<P
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	ProviderrUserAccountRepository repository;
+	ProviderUserAccountRepository repository;
 
 
 	// AbstractUpdateService<Authenticated, UserAccount> interface ------------
