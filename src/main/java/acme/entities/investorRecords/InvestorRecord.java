@@ -30,8 +30,7 @@ public class InvestorRecord extends DomainEntity {
 	@NotBlank
 	private String				investingStatement;
 
-	@Min(0)
-	@Max(5)
+	@Range(min = 0, max = 5)
 	private Integer				stars;
 
 }
