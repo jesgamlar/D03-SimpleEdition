@@ -2,9 +2,9 @@
 package acme.entities.investorRecords;
 
 import javax.persistence.Entity;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
+
+import org.hibernate.validator.constraints.Range;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
