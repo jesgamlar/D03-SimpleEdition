@@ -26,8 +26,8 @@
 	<acme:form-textarea code="administrator.company-records.form.label.activities" path="activities"/>
 	<acme:form-url code="administrator.company-records.form.label.website" path="website"/>
 	<acme:form-textbox code="administrator.company-records.form.label.phone" path="phone"/>
-	<acme:form-textbox code="administrator.company-records.form.label.email" path="email"/>
-	<acme:form-integer code="administrator.company-records.form.label.stars" path="stars"/>
+	<acme:form-textbox code="administrator.company-records.form.label.email" path="email" placeholder="email@address.com"/>
+	<acme:form-integer code="administrator.company-records.form.label.stars" path="stars" placeholder="0-5"/>
 	
 	<acme:form-submit test="${command == 'show'}"
 		code="administrator.company-records.form.button.update"

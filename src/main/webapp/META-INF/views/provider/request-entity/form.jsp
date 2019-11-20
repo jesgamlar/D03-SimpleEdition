@@ -21,7 +21,7 @@
 	<acme:form-textarea code="provider.requestEntity.form.label.text" path="text"/>
 	<acme:form-money code="provider.requestEntity.form.label.rewardMin" path="rewardMin"/>
 	<acme:form-money code="provider.requestEntity.form.label.rewardMax" path="rewardMax"/>
-	<acme:form-textbox code="provider.requestEntity.form.label.ticker" path="ticker"/>
+	<acme:form-textbox code="provider.requestEntity.form.label.ticker" path="ticker" placeholder="RXXXX-99999"/>
 	
 	<acme:form-checkbox code="provider.requestEntity.form.label.checkbox"  path="accept"/>
 	

@@ -15,9 +15,9 @@ administrator.company-records.form.label.sector = Sector:
 administrator.company-records.form.label.ceo = CEO:
 administrator.company-records.form.label.activities = Actividades:
 administrator.company-records.form.label.website = Sitio web:
-administrator.company-records.form.label.phone = Telefono:
+administrator.company-records.form.label.phone = Teléfono:
 administrator.company-records.form.label.email = Email:
-administrator.company-records.form.label.stars = Valoracion:
+administrator.company-records.form.label.stars = Valoración:
 administrator.company-records.form.button.update = Actualizar
 administrator.company-records.form.button.delete = Borrar
 administrator.company-records.form.button.create = Crear
@@ -25,8 +25,8 @@ administrator.company-records.form.button.return = Volver
 
 administrator.company-records.list.label.name = Nombre
 administrator.company-records.list.label.sector = Sector
-administrator.company-records.list.label.phone = Telefono
-administrator.company-records.list.label.stars = Valoracion
+administrator.company-records.list.label.phone = Teléfono
+administrator.company-records.list.label.stars = Valoración
 
 administrator.company-records.list.button.create = Crear
 
