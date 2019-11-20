@@ -54,8 +54,7 @@ public class CompanyRecords extends DomainEntity {
 	@NotNull
 	private Boolean				isIncorporated;
 
-	@Min(0)
-	@Max(5)
+	@Range(min = 0, max = 5)
 	private Integer				stars;
 
 
