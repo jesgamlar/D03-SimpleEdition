@@ -438,7 +438,7 @@ GamezBulletin
 + phone: String(NotBlank,Pattern)
 + email: String(NotBlank, Email)
 + isIncorporated: Boolean(NotNull)
-+ stars: Integer(Min(0), Max(5))
++ stars: Integer(Range(min = 0, max = 5))
 + /getIncorporated: String(Transient)</panel_attributes>
     <additional_attributes/>
   </element>
@@ -455,7 +455,7 @@ GamezBulletin
 + name: String(NotBlank)
 + sector: String(NotBlank)
 + investingStatement: String(NotBlank)
-+ stars: String(Min(0), Max(5))</panel_attributes>
++ stars: String(Range(min = 0, max = 5))</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
