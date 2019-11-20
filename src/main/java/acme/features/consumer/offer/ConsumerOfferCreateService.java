@@ -98,7 +98,7 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 			errors.state(request, entity.getMinMoney().getCurrency().equals("EUR") || entity.getMinMoney().getCurrency().equals("€"), "minMoney", "consumer.offer.form.error.minMoneyEUR");
 		}
 
-		if (!errors.hasErrors("rewardMax") && !errors.hasErrors("rewardMin")) {
+		if (!errors.hasErrors("maxMoney") && !errors.hasErrors("minMoney")) {
 			errors.state(request, entity.getMaxMoney().getAmount() >= entity.getMinMoney().getAmount(), "maxMoney", "consumer.offer.form.error.maxMoneyAmount");
 		}
 

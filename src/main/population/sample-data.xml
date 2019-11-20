@@ -106,11 +106,11 @@
 		<property name="deadline" value="2019/12/12 10:36" />
 		<property name="description" value="This challenge consist of creating an entity" />
 		<property name="goalGold" value="Create an entity" />
-		<property name="rewardGold" ref="reward01" />
+		<property name="rewardGold" ref="reward03" />
 		<property name="goalSilver" value="Design an entity" />
 		<property name="rewardSilver" ref="reward02" />
 		<property name="goalBronze" value="Think of an entity" />
-		<property name="rewardBronze" ref="reward03" />
+		<property name="rewardBronze" ref="reward01" />
 	</bean>
 
 	<bean id="challenge02" class="acme.entities.challenges.Challenge">
@@ -118,11 +118,11 @@
 		<property name="deadline" value="2020/01/01 10:30" />
 		<property name="description" value="This challenge consist of creating two entities" />
 		<property name="goalGold" value="Create two entities" />
-		<property name="rewardGold" ref="reward01" />
+		<property name="rewardGold" ref="reward03" />
 		<property name="goalSilver" value="Design two entities" />
 		<property name="rewardSilver" ref="reward02" />
 		<property name="goalBronze" value="Think of two entities" />
-		<property name="rewardBronze" ref="reward03" />
+		<property name="rewardBronze" ref="reward01" />
 	</bean>
 
 	<bean id="challenge03" class="acme.entities.challenges.Challenge">
@@ -130,11 +130,11 @@
 		<property name="deadline" value="2019/04/10 11:26" />
 		<property name="description" value="This challenge consist of creating three entities" />
 		<property name="goalGold" value="Create three entities" />
-		<property name="rewardGold" ref="reward01" />
+		<property name="rewardGold" ref="reward03" />
 		<property name="goalSilver" value="Design three entities" />
 		<property name="rewardSilver" ref="reward02" />
 		<property name="goalBronze" value="Think of three entities" />
-		<property name="rewardBronze" ref="reward03" />
+		<property name="rewardBronze" ref="reward01" />
 	</bean>
 	
 	<!-- Commercial Banners -->

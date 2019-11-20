@@ -19,7 +19,7 @@
 	<acme:form-textbox code="administrator.investorRecord.form.label.name" path="name"/>
 	<acme:form-textarea code="administrator.investorRecord.form.label.sector" path="sector"/>
 	<acme:form-textarea code="administrator.investorRecord.form.label.investingStatement" path="investingStatement"/>
-	<acme:form-integer code="administrator.investorRecord.form.label.stars" path="stars" placeholder="-"/>
+	<acme:form-integer code="administrator.investorRecord.form.label.stars" path="stars" placeholder="0-5"/>
 			
 	<acme:form-submit test="${command == 'show'}"
 		code="administrator.investorRecord.form.button.update" 

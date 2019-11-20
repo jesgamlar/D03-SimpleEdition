@@ -104,12 +104,12 @@ public class ProviderRequestEntityCreateService implements AbstractCreateService
 		}
 
 		if (!errors.hasErrors("deadline")) {
-			errors.state(request, entity.getDeadline() != null, "deadline", "provider.requestEntity.form.error.deadlineIncorrect");
+			errors.state(request, entity.getDeadline() != null, "deadline", "provider.requestEntity.form.error.deadline");
 		}
 
 		if (!errors.hasErrors("deadline")) {
 			Date currentDate = new Date(System.currentTimeMillis());
-			errors.state(request, entity.getDeadline().after(currentDate), "deadline", "provider.requestEntity.form.error.deadline");
+			errors.state(request, entity.getDeadline().after(currentDate), "deadline", "provider.requestEntity.form.error.deadlineIncorrect");
 		}
 
 		if (!errors.hasErrors("ticker")) {
